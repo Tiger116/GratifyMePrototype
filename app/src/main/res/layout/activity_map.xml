@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="student.arcadia.com.gratyfime.MapActivity"
+    android:orientation="vertical">
+
+    <fragment
+        class="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_medium"
+        android:paddingRight="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_medium"
+        android:paddingBottom="@dimen/padding_medium">
+
+        <TableRow android:id="@+id/address_row">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address_label"
+                android:textSize="@dimen/abc_text_size_body_1_material" />
+
+            <TextView
+                android:id="@+id/company_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:maxLines="3"
+                android:textSize="@dimen/abc_text_size_body_1_material" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/tel_row">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tel_label"
+                android:textSize="@dimen/abc_text_size_body_1_material" />
+
+            <TextView
+                android:id="@+id/company_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:maxLines="2"
+                android:autoLink="phone"
+                android:textSize="@dimen/abc_text_size_body_1_material" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/website_row">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/website_label"
+                android:textSize="@dimen/abc_text_size_body_1_material" />
+
+            <TextView
+                android:id="@+id/company_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:maxLines="3"
+                android:autoLink="web"
+                android:textSize="@dimen/abc_text_size_body_1_material" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/email_row">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_label"
+                android:textSize="@dimen/abc_text_size_body_1_material" />
+
+            <TextView
+                android:id="@+id/company_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:autoLink="email"
+                android:maxLines="2"
+                android:textSize="@dimen/abc_text_size_body_1_material" />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/twitter_row">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/twitter_label"
+                android:textSize="@dimen/abc_text_size_body_1_material" />
+
+            <TextView
+                android:id="@+id/company_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:maxLines="2"
+                android:textSize="@dimen/abc_text_size_body_1_material" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

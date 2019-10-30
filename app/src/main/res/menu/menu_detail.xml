@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="student.arcadia.com.gratyfime.DetailActivity">
+    <item
+        android:id="@+id/share_offer"
+        app:showAsAction="always"
+        android:title="@string/share_offer_title"
+        android:icon="@android:drawable/ic_menu_share" />
+</menu>
